@@ -79,8 +79,8 @@ Optimal, FIFO, LIFO, LRU, LFU (Least Frequently Used), SC (Second Chance / One h
 이 파일 시스템 구축을 위해, xv6의 stat.h에 T_CS 타입을 정의하고, 
 CS 기반 파일을 생성하기 위해 fcntl.h에 플래그 (O_CS)를 추가한다. 이를 통해, create 시스템 콜로 파일을 생성할 때 파일 타입을 지정해서 생성할 수 있도록 함.
 
-### 학습 과정
-1. inode의 직접 블록과 간접 블록에 대해 학습하고, 저장되는 과정
+### 학습한 것
+1. inode의 직접 블록과 간접 블록에 대해 학습하고, 저장되는 과정을 이해
    1. 이 과정에서 데이터 비트맵을 따라 비어있는 데이터블록을 할당받고 데이터를 쓰는 과정을 학습
    2. 파일시스템의 inode에 대해 인메모리 버퍼 내용을 디스크에 반영(커밋)하는 iupdate 함수에 대한 이해
    3. balloc과 ialloc에 대한 이해
